@@ -49,7 +49,7 @@
             <div class="container-fluid">
                 <div id="answer">
                     <c:forEach var="item" items="${questions}">
-                        <label>${item}?</label>
+                        <label>${item.questionText}?</label><br/>
                         <c:forEach var="answer" items="${item.answers}">
                             <input type="checkbox" name="answers" value="${answer.answerId}"/>${answer.answerText}<br/>
                         </c:forEach>

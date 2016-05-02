@@ -13,9 +13,9 @@ import java.util.Set;
 
 @Entity
 @DiscriminatorValue(value = "theoryTask")
-public class TheoryTask  extends AbstractTask {
+public class TheoryTask extends AbstractTask {
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "theoryTask")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "theoryTask")
     @Cascade({CascadeType.ALL})
     private Set<Question> questions = new HashSet<Question>(0);
 

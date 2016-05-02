@@ -20,9 +20,5 @@ public class AdminServiceImpl implements AdminService{
     @Autowired
     TaskDao taskDao;
 
-    public TheoryTask readTask(int taskId){
-        return (TheoryTask) adminDao.read(taskId, TheoryTask.class);
-    }
-
 
 }

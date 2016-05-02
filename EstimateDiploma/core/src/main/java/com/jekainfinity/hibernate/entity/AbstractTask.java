@@ -15,7 +15,7 @@ import java.util.Set;
 @Table(name = "TASK")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "TASK_TYPE", discriminatorType = DiscriminatorType.STRING)
-abstract class AbstractTask extends BaseEntity{
+public abstract class AbstractTask{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "TASK_ID",unique = true,  nullable = false)

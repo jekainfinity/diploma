@@ -21,12 +21,14 @@
             $("#mybutton").click(function(){
                 var answerIds = [];
                 var requestAnswer = new Object();
-                $("#answer input:checkbox[name=type]:checked").each(function(e){
-                    answerIds.push($(this).val());
+                $("#answer input:checkbox[name=answers]:checked").each(function(e){
+                    var value = $(this).val();
+                    alert(value);
+                    answerIds.push(value);
                 });
                 requestAnswer.theoryTaskId = ${taskId};
                 requestAnswer.answerIds = answerIds;
-
+                alert(JSON.stringify(requestAnswer));
                 $.ajax({
                     type: "POST",
                     url: "/user/passTheoryTask",
@@ -47,9 +49,9 @@
             <div class="container-fluid">
                 <div id="answer">
                     <c:forEach var="item" items="${questions}">
-                        <label>${item}?</label>
+                        <label>${item.questionText}?</label><br/>
                         <c:forEach var="answer" items="${item.answers}">
-                            <input type="checkbox" value="${answer.answerId}"/>${answer.answerText}<br/>
+                            <input type="checkbox" name="answers" value="${answer.answerId}"/>${answer.answerText}<br/>
                         </c:forEach>
                     </c:forEach>
                     <button id="mybutton" value="Submit">   Submit</button>

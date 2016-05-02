@@ -19,7 +19,7 @@ public class Answer {
     @Column(name = "ANSWER_TEXT")
     private String answerText;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "QUESTION_ID")
     private Question question;
 

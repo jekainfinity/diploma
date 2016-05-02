@@ -24,11 +24,12 @@ public class Question {
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "question")
     @Cascade({CascadeType.ALL})
+    @Fetch (FetchMode.SELECT)
     private List<Answer> answers = new ArrayList<>();
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "TASK_ID")
-    private TheoryTask theoryTask;
+    private AbstractTask theoryTask;
 
     public int getQuestionId() {
         return questionId;
@@ -54,11 +55,11 @@ public class Question {
         this.answers = answers;
     }
 
-    public TheoryTask getTheoryTask() {
+    public AbstractTask getTheoryTask() {
         return theoryTask;
     }
 
-    public void setTheoryTask(TheoryTask theoryTask) {
+    public void setTheoryTask(AbstractTask theoryTask) {
         this.theoryTask = theoryTask;
     }
 }

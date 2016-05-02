@@ -16,8 +16,6 @@ public class OverAllController {
     @Autowired
     TaskService taskService;
 
-
-
     @RequestMapping(value = "/theoryTaskList", method = RequestMethod.GET)
     public String getTheoryTaskList(Model model) {
         model.addAttribute("theoryList", taskService.getTheoryTaskList());

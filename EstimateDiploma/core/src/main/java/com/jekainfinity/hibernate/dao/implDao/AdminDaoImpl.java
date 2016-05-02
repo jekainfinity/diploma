@@ -9,5 +9,5 @@ import java.util.List;
 
 @Transactional
 @Repository("adminDao")
-public class AdminDaoImpl extends CrudImpl implements AdminDao {
+public class AdminDaoImpl implements AdminDao {
 }

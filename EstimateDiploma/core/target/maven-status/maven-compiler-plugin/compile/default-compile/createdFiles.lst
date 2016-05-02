@@ -11,6 +11,7 @@ com/jekainfinity/hibernate/dao/implDao/UserDaoImpl.class
 com/jekainfinity/hibernate/entity/enums/Roles.class
 com/jekainfinity/hibernate/entity/Answer.class
 com/jekainfinity/utill/mappers/Mapper.class
+com/jekainfinity/hibernate/entity/PracticeTest.class
 com/jekainfinity/hibernate/dao/implDao/UserResultDaoImpl.class
 com/jekainfinity/hibernate/entity/enums/TheoryTaskLevel.class
 com/jekainfinity/service/implementation/UserServiceImpl.class

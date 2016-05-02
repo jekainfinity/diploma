@@ -54,4 +54,10 @@ public class QuestionServiceImpl implements QuestionService {
     public Question read(int id, Class clazz) {
         return questionDao.read(id, clazz);
     }
+
+    @Override
+    @SuppressWarnings("unchecked")
+    public List<Question> readQuestionByTheoryTaskId(Integer taskId) {
+        return (ArrayList<Question>) questionDao.listByTask(taskId, Question.class);
+    }
 }

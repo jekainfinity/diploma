@@ -4,6 +4,7 @@
 /home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/hibernate/dao/AnswerDao.java
 /home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/hibernate/entity/Question.java
 /home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/service/implementation/UserDetailService.java
+/home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/hibernate/entity/PracticeTest.java
 /home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/hibernate/bean/TaskConfigBean.java
 /home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/service/UserService.java
 /home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/hibernate/entity/enums/Roles.java

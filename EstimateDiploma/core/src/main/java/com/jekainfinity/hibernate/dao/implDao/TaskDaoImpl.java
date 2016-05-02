@@ -1,6 +1,7 @@
 package com.jekainfinity.hibernate.dao.implDao;
 
 import com.jekainfinity.hibernate.dao.TaskDao;
+import com.jekainfinity.hibernate.entity.AbstractTask;
 import com.jekainfinity.hibernate.entity.BaseEntity;
 import com.jekainfinity.hibernate.entity.TheoryTask;
 import org.hibernate.SessionFactory;

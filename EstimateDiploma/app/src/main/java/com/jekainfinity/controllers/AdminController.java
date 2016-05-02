@@ -22,6 +22,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
 @Controller
 @RequestMapping(value = "/admin")
@@ -50,8 +51,11 @@ public class AdminController {
     }
 
     @RequestMapping(value = "/getTheoryTask", method = RequestMethod.GET)
-    public String getTheoryTask(){
-        return "redirect:/overall/theoryTaskList";
+    public String getTheoryTask(Model model){
+        List<TheoryTask> theoryTaskList = taskService.getTheoryTaskList();
+        model.addAttribute("theoryList", theoryTaskList);
+        System.out.println(theoryTaskList.size());
+        return "theoryTask/theoryTaskList";
     }
 
     @RequestMapping(value = "users", method = RequestMethod.GET)

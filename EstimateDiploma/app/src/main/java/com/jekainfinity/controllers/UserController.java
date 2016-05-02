@@ -4,6 +4,7 @@ import com.jekainfinity.hibernate.bean.RequestAnswer;
 import com.jekainfinity.hibernate.dao.UserDao;
 import com.jekainfinity.hibernate.entity.TheoryTask;
 import com.jekainfinity.hibernate.entity.User;
+import com.jekainfinity.service.QuestionService;
 import com.jekainfinity.service.TaskService;
 import com.jekainfinity.service.UserResultService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +28,9 @@ public class UserController {
     @Autowired
     UserResultService userResultService;
 
+    @Autowired
+    QuestionService questionService;
+
     @RequestMapping(value = "/dashboard", method = RequestMethod.GET)
     public String dashboard(){
         return "user/dashboard";
@@ -45,7 +49,7 @@ public class UserController {
 
     @RequestMapping(value = "/passTheoryTask/{theoryTaskId}", method = RequestMethod.GET)
     public String passTest(@PathVariable("theoryTaskId") int taskId, Model model){
-        model.addAttribute("questions", taskService.readTheoryTask(taskId).getQuestions());
+        model.addAttribute("questions", questionService.readQuestionByTheoryTaskId(taskId));
         model.addAttribute("taskId", taskId);
         return "passTest/passTheoryTest";
     }

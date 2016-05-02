@@ -41,7 +41,7 @@
                 </a>
                 <ul class="dropdown-menu dropdown-user">
                     <li class="divider"></li>
-                    <li><a href="<c:url value="/login?logout" />"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                    <li><a href="<c:url value="/logout" />"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                     </li>
                 </ul>
                 <!-- /.dropdown-user -->
