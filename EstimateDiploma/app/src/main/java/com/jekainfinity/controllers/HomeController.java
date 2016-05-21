@@ -1,15 +1,13 @@
 package com.jekainfinity.controllers;
 
-import com.jekainfinity.hibernate.bean.UserBean;
 import com.jekainfinity.hibernate.dao.UserDao;
-import com.jekainfinity.hibernate.entity.User;
-import com.jekainfinity.hibernate.entity.UserRole;
+import com.jekainfinity.hibernate.entity.rootsUser.User;
+import com.jekainfinity.hibernate.entity.rootsUser.UserRole;
 import com.jekainfinity.hibernate.entity.enums.Roles;
 import com.jekainfinity.service.AuthService;
 import com.jekainfinity.service.UserService;
 import com.jekainfinity.utill.mappers.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -17,18 +15,12 @@ import org.springframework.security.web.authentication.logout.SecurityContextLog
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 import java.security.Principal;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashSet;
 import java.util.Set;
 
 @Controller

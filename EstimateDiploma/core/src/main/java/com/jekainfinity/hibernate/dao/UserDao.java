@@ -1,7 +1,6 @@
 package com.jekainfinity.hibernate.dao;
 
-import com.jekainfinity.hibernate.entity.User;
-import com.jekainfinity.hibernate.entity.enums.Roles;
+import com.jekainfinity.hibernate.entity.rootsUser.User;
 
 import java.util.List;
 

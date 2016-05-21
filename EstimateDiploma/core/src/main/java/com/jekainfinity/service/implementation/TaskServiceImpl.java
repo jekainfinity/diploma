@@ -2,12 +2,11 @@ package com.jekainfinity.service.implementation;
 
 import com.jekainfinity.hibernate.bean.TheoryTaskBean;
 import com.jekainfinity.hibernate.dao.TaskDao;
-import com.jekainfinity.hibernate.entity.TheoryTask;
+import com.jekainfinity.hibernate.entity.tasks.TheoryTask;
 import com.jekainfinity.service.TaskService;
 import com.jekainfinity.utill.mappers.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 

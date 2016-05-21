@@ -1,7 +1,7 @@
 package com.jekainfinity.hibernate.dao.implDao;
 
 import com.jekainfinity.hibernate.dao.UserResultDao;
-import com.jekainfinity.hibernate.entity.UserResult;
+import com.jekainfinity.hibernate.entity.userResult.UserResult;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;

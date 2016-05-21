@@ -1,6 +1,6 @@
 package com.jekainfinity.hibernate.bean;
 
-import com.jekainfinity.hibernate.entity.TheoryTask;
+import com.jekainfinity.hibernate.entity.tasks.TheoryTask;
 import com.jekainfinity.hibernate.entity.enums.Courses;
 import com.jekainfinity.hibernate.entity.enums.TheoryTaskLevel;
 

@@ -1,7 +1,7 @@
 package com.jekainfinity.service.implementation;
 
 import com.jekainfinity.hibernate.dao.UserDao;
-import com.jekainfinity.hibernate.entity.UserRole;
+import com.jekainfinity.hibernate.entity.rootsUser.UserRole;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -9,11 +9,8 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.transaction.annotation.Transactional;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 public class UserDetailService implements UserDetailsService {
@@ -25,13 +22,13 @@ public class UserDetailService implements UserDetailsService {
 
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
-        com.jekainfinity.hibernate.entity.User user = userDao.findByUserName(username);
+        com.jekainfinity.hibernate.entity.rootsUser.User user = userDao.findByUserName(username);
         Set<GrantedAuthority> authorities = buildUserAuthority(user.getUserRole());
 
         return buildUserForAuthentication(user, authorities);
     }
 
-    private User buildUserForAuthentication( com.jekainfinity.hibernate.entity.User user, Set<GrantedAuthority> authorities) {
+    private User buildUserForAuthentication(com.jekainfinity.hibernate.entity.rootsUser.User user, Set<GrantedAuthority> authorities) {
         return new User(user.getUsername(), user.getPassword(), true, true, true, true, authorities);
     }
 

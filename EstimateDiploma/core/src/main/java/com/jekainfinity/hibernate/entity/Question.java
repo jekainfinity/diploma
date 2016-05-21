@@ -1,5 +1,6 @@
 package com.jekainfinity.hibernate.entity;
 
+import com.jekainfinity.hibernate.entity.tasks.AbstractTask;
 import org.hibernate.annotations.*;
 import org.hibernate.annotations.CascadeType;
 
@@ -7,9 +8,7 @@ import javax.persistence.*;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 @Entity
 @Table(name = "QUESTION")

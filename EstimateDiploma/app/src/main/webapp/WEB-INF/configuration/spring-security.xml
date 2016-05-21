@@ -17,10 +17,10 @@
                 password-parameter="password"/>
         <logout logout-success-url="/login?logout"/>
         <csrf disabled="true"/>
-        <intercept-url pattern="/registration" access="hasRole('ROLE_ANONYMOUS')"/>
+        <!--<intercept-url pattern="/registration" access="hasRole('ROLE_ANONYMOUS')"/>
         <intercept-url pattern="/user/**" access="hasAnyRole('ROLE_USER','ROLE_ADMIN')"/>
         <intercept-url pattern="/admin/**" access="hasRole('ROLE_ADMIN')"/>
-        <intercept-url pattern="/overall/**" access="hasAnyRole('ROLE_USER','ROLE_ADMIN')"/>
+        <intercept-url pattern="/overall/**" access="hasAnyRole('ROLE_USER','ROLE_ADMIN')"/>-->
     </http>
 
     <authentication-manager>

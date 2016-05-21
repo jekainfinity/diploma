@@ -6,12 +6,15 @@ import com.jekainfinity.hibernate.dao.TaskDao;
 import com.jekainfinity.hibernate.dao.UserDao;
 import com.jekainfinity.hibernate.dao.UserResultDao;
 import com.jekainfinity.hibernate.entity.*;
+import com.jekainfinity.hibernate.entity.rootsUser.User;
+import com.jekainfinity.hibernate.entity.userResult.UserResult;
+import com.jekainfinity.hibernate.entity.tasks.TheoryTask;
+import com.jekainfinity.hibernate.entity.userResult.UserResultForTheory;
 import com.jekainfinity.service.UserResultService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 

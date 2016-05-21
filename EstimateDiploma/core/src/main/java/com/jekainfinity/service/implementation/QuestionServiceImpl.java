@@ -6,7 +6,7 @@ import com.jekainfinity.hibernate.dao.QuestionDao;
 import com.jekainfinity.hibernate.dao.TaskDao;
 import com.jekainfinity.hibernate.entity.Answer;
 import com.jekainfinity.hibernate.entity.Question;
-import com.jekainfinity.hibernate.entity.TheoryTask;
+import com.jekainfinity.hibernate.entity.tasks.TheoryTask;
 import com.jekainfinity.service.QuestionService;
 import com.jekainfinity.utill.mappers.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;

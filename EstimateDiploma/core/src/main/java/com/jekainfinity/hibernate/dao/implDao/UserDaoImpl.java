@@ -1,8 +1,7 @@
 package com.jekainfinity.hibernate.dao.implDao;
 
 import com.jekainfinity.hibernate.dao.UserDao;
-import com.jekainfinity.hibernate.entity.User;
-import com.jekainfinity.hibernate.entity.enums.Roles;
+import com.jekainfinity.hibernate.entity.rootsUser.User;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;

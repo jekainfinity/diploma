@@ -3,15 +3,36 @@ package com.jekainfinity.utill.mappers;
 import com.jekainfinity.hibernate.bean.*;
 import com.jekainfinity.hibernate.entity.Answer;
 import com.jekainfinity.hibernate.entity.Question;
-import com.jekainfinity.hibernate.entity.TheoryTask;
-import com.jekainfinity.hibernate.entity.User;
+import com.jekainfinity.hibernate.entity.tasks.PracticeTask;
+import com.jekainfinity.hibernate.entity.tasks.TheoryTask;
+import com.jekainfinity.hibernate.entity.rootsUser.User;
 import org.springframework.stereotype.Service;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @Service
 public class Mapper {
+
+    public PracticeTask convertToPracticeTaskObject(PracticeTestBean practiceTestBean) {
+        PracticeTask practiceTask = new PracticeTask();
+        practiceTask.setTaskName(practiceTestBean.getTaskName());
+        practiceTask.setPurposeText(practiceTestBean.getPurposeText());
+        practiceTask.setCourse(practiceTestBean.getCourse());
+        practiceTask.setTaskDescription(practiceTestBean.getTaskDescription());
+        practiceTask.setTheoryTaskLevel(practiceTestBean.getTheoryTaskLevel());
+
+        return practiceTask;
+    }
+
+    public PracticeTestBean convertToPracticeTaskBean(PracticeTask practiceTestBean) {
+        PracticeTestBean practiceTask = new PracticeTestBean();
+        practiceTask.setTaskName(practiceTestBean.getTaskName());
+        practiceTask.setPurposeText(practiceTestBean.getPurposeText());
+        practiceTask.setCourse(practiceTestBean.getCourse());
+        practiceTask.setTaskDescription(practiceTestBean.getTaskDescription());
+        practiceTask.setTheoryTaskLevel(practiceTestBean.getTheoryTaskLevel());
+
+        return practiceTask;
+    }
+
     public UserBean convertToUserBean(User user) {
         UserBean ub = new UserBean();
         ub.setUsername(user.getUsername());

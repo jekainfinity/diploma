@@ -1,8 +1,7 @@
 package com.jekainfinity.service;
 
 import com.jekainfinity.hibernate.bean.TheoryTaskBean;
-import com.jekainfinity.hibernate.entity.TheoryTask;
-import org.springframework.stereotype.Service;
+import com.jekainfinity.hibernate.entity.tasks.TheoryTask;
 
 import java.util.List;
 

@@ -1,7 +1,6 @@
 package com.jekainfinity.hibernate.entity;
 
-import org.hibernate.annotations.*;
-import org.hibernate.annotations.CascadeType;
+import com.jekainfinity.hibernate.entity.userResult.UserResult;
 
 import javax.persistence.*;
 import javax.persistence.Entity;

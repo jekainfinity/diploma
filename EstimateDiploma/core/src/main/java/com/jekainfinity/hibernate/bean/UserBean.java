@@ -1,6 +1,6 @@
 package com.jekainfinity.hibernate.bean;
 
-import com.jekainfinity.hibernate.entity.UserRole;
+import com.jekainfinity.hibernate.entity.rootsUser.UserRole;
 
 import java.util.Date;
 import java.util.Set;

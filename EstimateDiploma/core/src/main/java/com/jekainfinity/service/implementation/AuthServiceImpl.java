@@ -3,13 +3,12 @@ package com.jekainfinity.service.implementation;
 import com.jekainfinity.hibernate.bean.UserBean;
 import com.jekainfinity.hibernate.dao.UserDao;
 import com.jekainfinity.hibernate.entity.enums.Roles;
-import com.jekainfinity.hibernate.entity.User;
-import com.jekainfinity.hibernate.entity.UserRole;
+import com.jekainfinity.hibernate.entity.rootsUser.User;
+import com.jekainfinity.hibernate.entity.rootsUser.UserRole;
 import com.jekainfinity.service.AuthService;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.HashSet;
 import java.util.Set;

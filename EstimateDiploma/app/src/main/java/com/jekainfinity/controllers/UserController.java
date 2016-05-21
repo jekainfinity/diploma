@@ -2,15 +2,12 @@ package com.jekainfinity.controllers;
 
 import com.jekainfinity.hibernate.bean.RequestAnswer;
 import com.jekainfinity.hibernate.dao.UserDao;
-import com.jekainfinity.hibernate.entity.TheoryTask;
-import com.jekainfinity.hibernate.entity.User;
 import com.jekainfinity.service.QuestionService;
 import com.jekainfinity.service.TaskService;
 import com.jekainfinity.service.UserResultService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;

@@ -1,6 +1,6 @@
 package com.jekainfinity.hibernate.dao;
 
-import com.jekainfinity.hibernate.entity.UserResult;
+import com.jekainfinity.hibernate.entity.userResult.UserResult;
 
 /**
  * Created by opensoul on 01.05.16.
