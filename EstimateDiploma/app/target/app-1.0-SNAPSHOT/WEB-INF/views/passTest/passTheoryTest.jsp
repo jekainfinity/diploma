@@ -21,21 +21,20 @@
             $("#mybutton").click(function(){
                 var answerIds = [];
                 var requestAnswer = new Object();
-                $("#answer input:checkbox[name=answers]:checked").each(function(e){
+                $("#answer input:radio[class=answers]:checked").each(function(e){
                     var value = $(this).val();
-                    alert(value);
                     answerIds.push(value);
                 });
                 requestAnswer.theoryTaskId = ${taskId};
                 requestAnswer.answerIds = answerIds;
-                alert(JSON.stringify(requestAnswer));
                 $.ajax({
                     type: "POST",
                     url: "/user/passTheoryTask",
                     contentType: "application/json; charset=utf-8",
                     dataType: "json",
                     data: JSON.stringify(requestAnswer),
-                    success: function(){
+                    success: function(data){
+                        alert(data);
                     }
                 })
             })
@@ -51,7 +50,7 @@
                     <c:forEach var="item" items="${questions}">
                         <label>${item.questionText}?</label><br/>
                         <c:forEach var="answer" items="${item.answers}">
-                            <input type="checkbox" name="answers" value="${answer.answerId}"/>${answer.answerText}<br/>
+                            <input type="radio" class="answers" name="radios[${item.questionId}]"  value="${answer.answerId}"/>${answer.answerText}<br/>
                         </c:forEach>
                     </c:forEach>
                     <button id="mybutton" value="Submit">   Submit</button>

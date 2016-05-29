@@ -1,7 +1,10 @@
 /home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/hibernate/bean/UserBean.java
 /home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/hibernate/dao/implDao/CrudImpl.java
+/home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/hibernate/entity/tasks/UserCode.java
 /home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/hibernate/dao/PracticeTestDao.java
+/home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/hibernate/bean/PracticeTestBean.java
 /home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/utill/wrapper/ListWrapper.java
+/home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/hibernate/entity/tasks/PractiseTestResult.java
 /home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/hibernate/entity/userResult/UserResult.java
 /home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/hibernate/dao/AnswerDao.java
 /home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/hibernate/entity/rootsUser/User.java
@@ -33,14 +36,15 @@
 /home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/service/TaskService.java
 /home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/service/implementation/QuestionServiceImpl.java
 /home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/service/implementation/PracticeTestServiceImpl.java
+/home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/utill/wrapper/JavaObjectFromString.java
 /home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/hibernate/entity/tasks/PracticeTask.java
 /home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/service/QuestionService.java
 /home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/hibernate/dao/TaskDao.java
 /home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/service/UserResultService.java
 /home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/hibernate/entity/userResult/UserResultForTheory.java
-/home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/hibernate/bean/PracticeTaskBean.java
 /home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/hibernate/dao/QuestionDao.java
 /home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/hibernate/entity/UserAnswer.java
+/home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/hibernate/bean/CompileInform.java
 /home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/hibernate/dao/implDao/AdminDaoImpl.java
 /home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/hibernate/bean/AnswerBean.java
 /home/opensoul/IdeaProjects/EstimateDiploma/core/src/main/java/com/jekainfinity/hibernate/bean/TheoryTaskBean.java

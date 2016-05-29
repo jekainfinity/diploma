@@ -1,6 +1,7 @@
 com/jekainfinity/controllers/PracticeTestPassingController.class
+com/jekainfinity/controllers/AdminController.class
 com/jekainfinity/controllers/OverAllController.class
 com/jekainfinity/controllers/HomeController.class
+com/jekainfinity/controllers/PracticeTestAdminController.class
 com/jekainfinity/runner/TestString.class
-com/jekainfinity/controllers/AdminController.class
 com/jekainfinity/controllers/UserController.class

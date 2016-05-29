@@ -1,8 +1,11 @@
 com/jekainfinity/hibernate/entity/tasks/PracticeTask.class
 com/jekainfinity/hibernate/bean/RequestAnswer.class
+com/jekainfinity/hibernate/bean/CompileInform.class
 com/jekainfinity/service/PractiseTestService.class
+com/jekainfinity/hibernate/entity/tasks/UserCode.class
 com/jekainfinity/hibernate/dao/implDao/AnswerDaoImpl.class
 com/jekainfinity/service/implementation/UserDetailService.class
+com/jekainfinity/hibernate/entity/tasks/PractiseTestResult.class
 com/jekainfinity/service/implementation/TaskServiceImpl.class
 com/jekainfinity/service/implementation/AuthServiceImpl.class
 com/jekainfinity/service/AuthService.class
@@ -17,6 +20,7 @@ com/jekainfinity/hibernate/dao/implDao/UserResultDaoImpl.class
 com/jekainfinity/hibernate/entity/enums/TheoryTaskLevel.class
 com/jekainfinity/service/implementation/UserServiceImpl.class
 com/jekainfinity/hibernate/dao/UserResultDao.class
+com/jekainfinity/utill/wrapper/JavaObjectFromString.class
 com/jekainfinity/hibernate/entity/Question.class
 com/jekainfinity/service/implementation/AdminServiceImpl.class
 com/jekainfinity/hibernate/entity/tasks/TheoryTask.class
@@ -43,13 +47,13 @@ com/jekainfinity/hibernate/dao/UserDao.class
 com/jekainfinity/service/UserService.class
 com/jekainfinity/hibernate/entity/UserAnswer.class
 com/jekainfinity/hibernate/bean/UserBean.class
-com/jekainfinity/hibernate/bean/PracticeTaskBean.class
 com/jekainfinity/hibernate/dao/implDao/CrudImpl.class
 com/jekainfinity/service/implementation/PracticeTestServiceImpl.class
 com/jekainfinity/hibernate/entity/rootsUser/User.class
 com/jekainfinity/hibernate/dao/implDao/QuestionDaoImpl.class
 com/jekainfinity/service/TaskService.class
 com/jekainfinity/hibernate/entity/userResult/UserResultForTheory.class
+com/jekainfinity/hibernate/bean/PracticeTestBean.class
 com/jekainfinity/hibernate/entity/tasks/AbstractTask.class
 com/jekainfinity/service/implementation/UserResultServiceImpl.class
 com/jekainfinity/service/AdminService.class
