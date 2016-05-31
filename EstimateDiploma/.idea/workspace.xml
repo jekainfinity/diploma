@@ -60,7 +60,7 @@
       <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.1842105">
+            <state vertical-scroll-proportion="-4.618421">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -184,7 +184,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/core/src/main/java/com/jekainfinity/service/PractiseTestServise.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/jekainfinity/controllers/PracticeTestUserController.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/jekainfinity/hibernate/bean/PracticeTaskBean.java" />
         <option value="$PROJECT_DIR$/app/src/main/webapp/WEB-INF/views/practiceTest/addPracticeTest.jsp" />
@@ -235,6 +234,7 @@
         <option value="$PROJECT_DIR$/app/src/main/webapp/WEB-INF/views/login.jsp" />
         <option value="$PROJECT_DIR$/app/src/main/webapp/WEB-INF/configuration/spring-security.xml" />
         <option value="$PROJECT_DIR$/app/src/main/webapp/WEB-INF/views/succesedLogin.jsp" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
       </list>
     </option>
   </component>
@@ -441,14 +441,8 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="EstimateDiploma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="jekainfinity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1111,7 +1105,7 @@
       <workItem from="1464617717583" duration="1922000" />
       <workItem from="1464631956880" duration="1784000" />
       <workItem from="1464719387786" duration="1822000" />
-      <workItem from="1464721294359" duration="104000" />
+      <workItem from="1464721294359" duration="190000" />
     </task>
     <task id="LOCAL-00001" summary="First dummy">
       <created>1464543026097</created>
@@ -1143,11 +1137,17 @@
       <option name="project" value="LOCAL" />
       <updated>1464721351946</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="workspace">
+      <created>1464721410578</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1464721410578</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="339105000" />
+    <option name="totallyTimeSpent" value="339191000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -1241,7 +1241,8 @@
     <MESSAGE value="security_flow_commit_1" />
     <MESSAGE value="security_flow_commit_2" />
     <MESSAGE value="style_about" />
-    <option name="LAST_COMMIT_MESSAGE" value="style_about" />
+    <MESSAGE value="workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1644,7 +1645,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1842105">
+        <state vertical-scroll-proportion="-4.618421">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
