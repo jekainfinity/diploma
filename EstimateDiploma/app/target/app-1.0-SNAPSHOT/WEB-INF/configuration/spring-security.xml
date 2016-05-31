@@ -10,17 +10,17 @@
     <http auto-config="true" use-expressions="true">
         <form-login
                 login-page="/login"
-                default-target-url="/index"
+                default-target-url="/successLogin"
                 authentication-failure-url="/login?error"
                 login-processing-url="/j_spring_security_check"
                 username-parameter="username"
                 password-parameter="password"/>
         <logout logout-success-url="/login?logout"/>
         <csrf disabled="true"/>
-        <!--<intercept-url pattern="/registration" access="hasRole('ROLE_ANONYMOUS')"/>
+        <intercept-url pattern="/registration" access="hasRole('ROLE_ANONYMOUS')"/>
         <intercept-url pattern="/user/**" access="hasAnyRole('ROLE_USER','ROLE_ADMIN')"/>
         <intercept-url pattern="/admin/**" access="hasRole('ROLE_ADMIN')"/>
-        <intercept-url pattern="/overall/**" access="hasAnyRole('ROLE_USER','ROLE_ADMIN')"/>-->
+        <intercept-url pattern="/overall/**" access="hasAnyRole('ROLE_USER','ROLE_ADMIN')"/>
     </http>
 
     <authentication-manager>
@@ -34,6 +34,6 @@
                 class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder">
     </beans:bean>
 
-    <beans:bean id="customUserDetailsService" class="com.jekainfinity.service.implementation.UserDetailService"/>
+    <beans:bean id="customUserDetailsService" class="com.jekainfinity.hibernate.service.implementation.UserDetailService"/>
 
 </beans:beans>
